@@ -19,11 +19,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Application name</a>
+                <a href="/" class="navbar-brand">Filght booking</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('index') }}">Home</a></li>
+					<li><a href="{{ url_for('register') }}">Register</a></li>
+                    <!-- 透過url_for設定USERINFO連結綁定userinfo -->
+                    <li><a href="{{ url_for('userinfo') }}">USERINFO</a></li>
+        <!-- 透過url_for設定LOGOUT連結綁定LOGOUT -->
+                    <li><a href="{{ url_for('logout') }}">LOGOUT</a></li>
+        <!-- 透過url_for設定LOGIN連結綁定LOGIN -->
+                    <li><a href="{{ url_for('login') }}">LOGIN</a></li>
                 </ul>
             </div>
         </div>

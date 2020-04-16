@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flash">
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    hello, {{ username }}, Welcome my homepage!
+	{% if error %}
+    <p class="error"><strong>Error:</strong> {{error}}</p>
+	{% endif %}
+</form>
+{% endblock %}

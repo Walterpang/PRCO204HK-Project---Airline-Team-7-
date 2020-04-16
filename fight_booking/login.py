@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, session, url_for, redirect
+from flask import Flask, render_template, request, session, url_for, redirect,flash
 import pymysql.cursors
 
-from appdef import app, conn
+#from appdef import app, conn
 
 #Define route for login
 @app.route('/login')
@@ -32,7 +32,10 @@ def loginAuth():
     #creates a session for the the user
     #session is a built in
     session['username'] = username
-    return redirect(url_for('index'))
+    #return redirect(url_for('index'))
+    flash('Login Success!')
+    return redirect(url_for('hello', username=request.form.get('username')))
+   
     # if usrtype == 'staff':
       # return redirect(url_for('staffHome'))
     # elif usrtype == 'customer':
@@ -44,3 +47,7 @@ def loginAuth():
     #returns an error message to the html page
     error = 'Invalid login or username'
     return render_template('login.html', error=error) 
+    
+@app.route('/hello/<username>')
+def hello(username):
+    return render_template('hello.html', username=username)
