@@ -5,6 +5,7 @@ CREATE TABLE `airline`.`tbl_user` (
   `user_password` VARCHAR(45) NULL,
   `user_email` VARCHAR(45) NULL,
   `user_confirm` Boolean  default '0',
+  `password_hash` VARCHAR(200) NULL,
   PRIMARY KEY (`user_id`));
   
   

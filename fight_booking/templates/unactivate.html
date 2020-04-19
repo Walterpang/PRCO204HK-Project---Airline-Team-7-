@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<div class="page-header">
+    <p>Hi {{ current_user.username }}!</p>
+    <p>You Still Do Not Activate Your Account, Hope You Can Check Your Email And Click The Link IN 24 Hours.</p>
+    <p>If You Had Already Over 24 Hours, Please Click The Link To Send Check Mail Again.</p>
+    <a href={{ url_for('re_userconfirm') }}>Click Here to resend activate email.</a>
+</div>
+{% endblock %}

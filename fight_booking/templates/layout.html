@@ -21,22 +21,34 @@
                 </button>
                 <a href="/" class="navbar-brand">Filght booking</a>
             </div>
+
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-					<li><a href="{{ url_for('register') }}">Register</a></li>
+                    {% if current_user.is_authenticated %}
                     <!-- 透過url_for設定USERINFO連結綁定userinfo -->
                     <li><a href="{{ url_for('userinfo') }}">USERINFO</a></li>
-        <!-- 透過url_for設定LOGOUT連結綁定LOGOUT -->
+                    <!-- 透過url_for設定LOGOUT連結綁定LOGOUT -->
                     <li><a href="{{ url_for('logout') }}">LOGOUT</a></li>
-        <!-- 透過url_for設定LOGIN連結綁定LOGIN -->
+                    {% else %}
+                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                    <!-- 透過url_for設定LOGIN連結綁定LOGIN -->
                     <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="container body-content">
-        {% block content %}{% endblock %}
+         <!-- 用來接後端傳來的flash-message -->
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning">
+            {{ message }}
+        </div>
+        {% endfor %}
+
+        {% block content %}
+        {% endblock %}
         <hr />
         <footer>
             <p>&copy; {{ year }} </p>

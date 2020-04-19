@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from flask_bcrypt import Bcrypt
@@ -26,7 +26,7 @@ login = LoginManager(app)
 login.login_view = 'login'
 
 #db.drop_all()
-#db.create_all()
+
 #from fight_booking import model
 #db.session.commit()
 
