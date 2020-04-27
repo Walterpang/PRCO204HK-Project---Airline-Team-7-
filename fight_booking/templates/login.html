@@ -1,14 +1,15 @@
 {% extends "layout.html" %}
+{% block title %}404{% endblock %}
 {% import "bootstrap/wtf.html" as wtf %}
 {% block content %}
     <h1>Login with Your Account</h1>
     <h2>Welcome</h2>
     {{ wtf.quick_form(form) }}
     <p>FORGET PASSWORD<br>
-    <a href="{{ url_for('reset_password') }}">Click Here To Reset Password</a>
+    <a href="{{ url_for('user.reset_password') }}">Click Here To Reset Password</a>
     </p>
     <p>JOIN US!..<br>
-    <a href="{{ url_for('register') }}">Register Account</a>
+    <a href="{{ url_for('user.register') }}">Register Account</a>
     </p>
 	{% if error %}
     <p class="error"><strong>Error:</strong> {{error}}</p>

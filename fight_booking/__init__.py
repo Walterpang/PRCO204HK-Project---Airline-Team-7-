@@ -1,12 +1,11 @@
-from flask import Flask, render_template,flash
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from flask_bcrypt import Bcrypt
 from flask_migrate import Migrate
 from flask_mail import Mail
-from flask_login import LoginManager,UserMixin, login_user, current_user, login_required, logout_user
+from flask_login import LoginManager
 
-from sqlalchemy import create_engine
 from config import Config
 import os
 
@@ -23,11 +22,18 @@ mail = Mail(app)
 migrate = Migrate(app, db)
 
 login = LoginManager(app)
-login.login_view = 'login'
+login.login_view = 'user.login'
+
 
 #db.drop_all()
-
 #from fight_booking import model
 #db.session.commit()
 
-from fight_booking import view
+from fight_booking.user import user
+app.register_blueprint(user, url_prefix='/user')
+from fight_booking.main import main
+app.register_blueprint(main, url_prefix='/main')
+from fight_booking.flight import flight
+app.register_blueprint(flight, url_prefix='/flight')
+
+db.create_all()

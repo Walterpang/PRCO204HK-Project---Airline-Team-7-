@@ -1,4 +1,4 @@
 <h1>Hello {{ user.username }}, How are you!</h1>
 <h2>Please click the link to reset your password.</h2>
-hyperlink=>{{ url_for('reset_password_recive', token=token, _external=True) }}
+hyperlink=>{{ url_for('user.reset_password_recive', token=token, _external=True) }}
 <h2>If you do not apply to the request , just delete it, but maybe somebody want try your account.</h2>

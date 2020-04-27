@@ -9,3 +9,4 @@ flask_mail
 flask_login
 flask_babel
 flask_markdown
+flask-blueprint

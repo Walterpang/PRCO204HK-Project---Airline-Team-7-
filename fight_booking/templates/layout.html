@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% block title %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
-	{% block title %}{% endblock %}
+	{% endblock %}
 </head>
 
 <body>
@@ -19,20 +20,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Filght booking</a>
+                <a href="{{ url_for('main.index') }}" class="navbar-brand">Filght booking</a>
             </div>
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     {% if current_user.is_authenticated %}
                     <!-- 透過url_for設定USERINFO連結綁定userinfo -->
-                    <li><a href="{{ url_for('userinfo') }}">USERINFO</a></li>
+                    <li><a href="{{ url_for('main.edituserinfo') }}">USERINFO</a></li>
                     <!-- 透過url_for設定LOGOUT連結綁定LOGOUT -->
-                    <li><a href="{{ url_for('logout') }}">LOGOUT</a></li>
+                    <li><a href="{{ url_for('user.logout') }}">LOGOUT</a></li>
                     {% else %}
-                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                    <li><a href="{{ url_for('user.register') }}">Register</a></li>
                     <!-- 透過url_for設定LOGIN連結綁定LOGIN -->
-                    <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+                    <li><a href="{{ url_for('user.login') }}">LOGIN</a></li>
                     {% endif %}
                 </ul>
             </div>

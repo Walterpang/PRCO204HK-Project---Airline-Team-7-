@@ -1,51 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37c0275f-4655-496c-9d43-960b4e652f55" name="Default Changelist" comment="" />
+    <list default="true" id="ea893446-496a-46f3-8190-cbc3da7f5c7d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1aFPxvPScf1yRyhfdHkD8s0GNsm" />
+  <component name="ProjectId" id="1aFhMJqCxA647gVPBwQHQ0gu40F" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../a" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Airline-Reservation-System-master" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\a\fight_booking\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\a\fight_booking\user" />
+      <recent name="D:\Work\a\fight_booking\airline" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="flask_register" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="a" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_register.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.flask_register" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="37c0275f-4655-496c-9d43-960b4e652f55" name="Default Changelist" comment="" />
-      <created>1586328618922</created>
+      <changelist id="ea893446-496a-46f3-8190-cbc3da7f5c7d" name="Default Changelist" comment="" />
+      <created>1586337199827</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586328618922</updated>
+      <updated>1586337199827</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1032" y="181" key="#Inspections" timestamp="1586330823312">
+    <state x="1160" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586953229441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="181" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586330823312" />
-    <state x="1220" y="281" key="FileChooserDialogImpl" timestamp="1586337190343">
+    <state x="1160" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586953229441" />
+    <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586337398930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="281" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586337190343" />
-    <state x="926" y="165" key="SettingsEditor" timestamp="1586329980638">
+    <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586337398930" />
+    <state x="1220" y="281" key="FileChooserDialogImpl" timestamp="1587972841037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="926" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586329980638" />
+    <state x="1220" y="281" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587972841037" />
+    <state width="936" height="279" key="GridCell.Tab.0.bottom" timestamp="1586349458823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586349458823" />
+    <state width="936" height="279" key="GridCell.Tab.0.center" timestamp="1586349458822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586349458822" />
+    <state width="936" height="279" key="GridCell.Tab.0.left" timestamp="1586349458822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586349458822" />
+    <state width="936" height="279" key="GridCell.Tab.0.right" timestamp="1586349458822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586349458822" />
+    <state x="1053" y="100" width="774" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587030606516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1053" y="100" width="774" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587030606516" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fight_booking/main/view.py</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
