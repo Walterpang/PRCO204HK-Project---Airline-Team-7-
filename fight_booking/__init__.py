@@ -25,7 +25,7 @@ login = LoginManager(app)
 login.login_view = 'user.login'
 
 
-#db.drop_all()
+db.drop_all()
 #from fight_booking import model
 #db.session.commit()
 

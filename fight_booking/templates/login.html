@@ -1,5 +1,4 @@
 {% extends "layout.html" %}
-{% block title %}404{% endblock %}
 {% import "bootstrap/wtf.html" as wtf %}
 {% block content %}
     <h1>Login with Your Account</h1>
@@ -14,4 +13,5 @@
 	{% if error %}
     <p class="error"><strong>Error:</strong> {{error}}</p>
 	{% endif %}
+
 {% endblock %}

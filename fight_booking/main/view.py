@@ -1,9 +1,11 @@
 from fight_booking.main import main
 from fight_booking import app
 from fight_booking import db
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, abort
 from flask_login import login_required, current_user
 from fight_booking.main.form import FormUserInfo
+from fight_booking.user.model import UserReister
+
 
 @main.route('/')
 @main.route('/index')
@@ -36,3 +38,11 @@ def edituserinfo():
     form.contactNo.data = current_user.contactNo
     form.gender.data = current_user.gender
     return render_template('main/editUserInfo.html', form=form)
+
+@main.route('/userinfo/<username>')
+@login_required
+def userinfo(username):
+    user = UserReister.query.filter_by(user_username= username).first()
+    if user is None:
+        abort(404)
+    return render_template('main/UserInfo.html', user=user)

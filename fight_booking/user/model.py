@@ -32,7 +32,7 @@ class UserReister(UserMixin, db.Model):
     regist_date = db.Column(db.DateTime, default = datetime.utcnow())
     last_login = db.Column(db.DateTime, default = datetime.utcnow())
 
-    flight = db.relationship("Flight", secondary="booking" , back_populates="users" )
+    #flights = db.relationship("Flight", secondary="booking" , lazy='subquery' , backref=db.backref('users', lazy=True) )
 
     @property
     def password(self):
@@ -98,4 +98,5 @@ def load_user(user_id):
 
 
 #db.create_all()
+
 

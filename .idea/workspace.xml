@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,12 +27,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Airline-Reservation-System-master" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\a\fight_booking\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\a\fight_booking\templates\booking" />
       <recent name="D:\Work\a\fight_booking\user" />
       <recent name="D:\Work\a\fight_booking\airline" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\a\fight_booking\main" />
     </key>
   </component>
   <component name="RunManager">
